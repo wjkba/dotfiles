@@ -1,0 +1,28 @@
+!regolith.lockscreen.wallpaper.file: /usr/share/backgrounds/gnome/blobs-l.svg
+!regolith.look.path: /usr/share/regolith-look/i3-default
+regolith.look.path: /usr/share/regolith-look/default
+regolith.lockscreen.wallpaper.file: /usr/share/desktop-base/emerald-theme/wallpaper/gnome-background.xml
+regolith.wallpaper.file: /home/user0/Pictures/marmot2560.png
+regolith.wallpaper.options: centered
+wm.gaps.inner.size: 0
+wm.gaps.smart: false
+wm.bar.position: top
+wm.workspace.01.name: 1
+wm.workspace.02.name: 2
+wm.workspace.03.name: 3
+wm.workspace.04.name: 4
+wm.workspace.05.name: 5
+wm.workspace.06.name: 6
+wm.workspace.07.name: 7
+wm.workspace.08.name: 8
+wm.workspace.09.name: 9
+wm.workspace.10.name: 10
+
+#define bar_bg_color #121212
+wm.bar.background.color: bar_bg_color
+
+wm.program.launcher.app: rofi -show drun
+
+wm.program.files: thunar
+
+gtk.icon_theme_name: ePapirus
