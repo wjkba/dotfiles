@@ -21,8 +21,14 @@ wm.workspace.10.name: 10
 #define bar_bg_color #121212
 wm.bar.background.color: bar_bg_color
 
+!App launcher
 wm.program.launcher.app: rofi -show drun
 
+!File manager
 wm.program.files: thunar
 
+!Icon theme
 gtk.icon_theme_name: ePapirus
+
+!Flameshot
+wm.program.sleep: flameshot gui
