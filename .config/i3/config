@@ -237,6 +237,7 @@ bindsym Mod4+Shift+s exec flameshot gui
 
 # Dunst
 exec --no-startup-id dunst &
+bindsym $mod+c exec dunstctl close
 
 # Assign workspaces to monitors
 # workspace $ws1 output HDMI-1
