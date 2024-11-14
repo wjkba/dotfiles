@@ -42,7 +42,7 @@ style = "Italic"
 family = "Fira Code"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 args = ["--login"]
 program = "/usr/bin/fish"
 
@@ -54,3 +54,5 @@ startup_mode = "Windowed"
 [window.padding]
 x = 20
 y = 20
+
+[terminal]
