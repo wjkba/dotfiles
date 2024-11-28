@@ -78,9 +78,22 @@
   "memory": {
       "format": "{}% RAM"
   },
-  "battery": {
-	"format": "{capacity}% "
-  },
+"battery": {
+    "format": "{capacity}% {icon} ",
+    // "format": "{icon}  {capacity}% - {time}",
+    "format-icons": ["", "", "", "", ""],
+    "format-time": "{H}h{M}m",
+    "format-charging": "{capacity}% {icon}",
+    // "format-charging": "  {icon}  {capacity}% - {time}",
+    "format-full": "  {icon}",
+    "interval": 30,
+    "states": {
+        "warning": 25,
+        "critical": 10
+    },
+    "tooltip": false,
+    "on-click": "2"
+},
   "temperature": {
       // "thermal-zone": 2,
       // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
