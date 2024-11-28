@@ -17,11 +17,10 @@
   //     "sway/window"
   // ],
   "modules-right": [
-      "pulseaudio",
       "cpu",
       "memory",
-      "temperature",
-      "backlight",
+      "pulseaudio",
+      "battery",
       "clock",
       "tray",
       "custom/power"
@@ -73,11 +72,14 @@
       "format-alt": "{:%Y-%m-%d}"
   },
   "cpu": {
-      "format": "{usage}% ",
+      "format": "{usage}% CPU",
       "tooltip": false
   },
   "memory": {
-      "format": "{}% "
+      "format": "{}% RAM"
+  },
+  "battery": {
+	"format": "{capacity}% "
   },
   "temperature": {
       // "thermal-zone": 2,
@@ -94,10 +96,10 @@
   },
   "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
-      "format": "{volume}% {icon} {format_source}",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-bluetooth-muted": " {icon} {format_source}",
-      "format-muted": " {format_source}",
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% {icon}",
+      "format-bluetooth-muted": " {icon}",
+      "format-muted": "muted",
       "format-source": "{volume}% ",
       "format-source-muted": "",
       "format-icons": {

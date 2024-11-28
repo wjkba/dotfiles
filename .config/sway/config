@@ -4,6 +4,9 @@ set $mod Mod1
 # Bar
 bar swaybar_command waybar
 
+# keyring stuff
+exec dbus-update-activation-environment --all
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -189,7 +192,7 @@ client.urgent           #bf616a #bf616a #ffffff #bf616a
 bindsym $mod+i exec gpick -p
 
 # Wallpaper
-output "*" background ~/.backgrounds/voltz.png fill
+output "*" background ~/.backgrounds/caspar-david.jpg fill
 
 # Rofi
 bindsym $mod+space exec rofi -show drun -modi "power-menu:~/.config/rofi/rofi-power-menu --no-symbols"
