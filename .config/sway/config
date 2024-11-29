@@ -192,7 +192,7 @@ client.urgent           #bf616a #bf616a #ffffff #bf616a
 bindsym $mod+i exec gpick -p
 
 # Wallpaper
-output "*" background ~/.backgrounds/caspar-david.jpg fill
+output "*" background ~/.backgrounds/voltz.png fill
 
 # Rofi
 bindsym $mod+space exec rofi -show drun -modi "power-menu:~/.config/rofi/rofi-power-menu --no-symbols"
@@ -246,3 +246,9 @@ for_window [window_role="bubble"] floating enable
 for_window [window_role="dialog"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable, resize set width 1030 height 710
+
+# keyboard layout
+input type:keyboard {
+    xkb_layout pl
+
+}
