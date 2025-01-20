@@ -183,7 +183,7 @@ exec_always {
 
 # THEME
 # class                 border  bground text    indicator child_border
-client.focused          #ffffff #ffffff #ffffff #1e1e1e
+client.focused          #ffffff #808080 #000000 #1e1e1e
 client.unfocused        #121212 #121212 #7e7e7e #121212
 client.focused_inactive #2c2c2c #2c2c2c #b0b0b0 #2c2c2c
 client.urgent           #bf616a #bf616a #ffffff #bf616a
@@ -233,7 +233,7 @@ exec --no-startup-id sleep 2 && nm-applet
 exec --no-startup-id sleep 2 && blueman-applet
 
 # browser shortcut
-bindsym $mod+b exec --no-startup-id vivaldi --new-window
+#bindsym $mod+b exec --no-startup-id flatpak run io.github.zen_browser.zen
 
 # file explorer shortcut
 bindsym $mod+e exec --no-startup-id thunar
@@ -252,3 +252,8 @@ input type:keyboard {
     xkb_layout pl
 
 }
+
+# launch program
+bindsym Mod4+1 exec --no-startup-id flatpak run io.github.zen_browser.zen
+bindsym Mod4+2 exec --no-startup-id code
+bindsym Mod4+3 exec --no-startup-id microsoft-edge
