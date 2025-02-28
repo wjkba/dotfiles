@@ -198,7 +198,7 @@ output "*" background ~/.backgrounds/voltz.png fill
 bindsym $mod+space exec rofi -show drun -modi "power-menu:~/.config/rofi/rofi-power-menu --no-symbols"
 
 # Flameshot
-bindsym Mod4+Shift+s exec flameshot gui
+bindsym Mod4+Shift+s exec --no-startup-id grim -g "$(slurp -w 0)" - | wl-copy
 
 # Dunst
 exec --no-startup-id dunst &
