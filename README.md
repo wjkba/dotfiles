@@ -5,7 +5,7 @@ sudo dnf install i3 alacritty dunst fish polybar rofi thunar flameshot feh redsh
 
 wayland
 ```
-sudo dnf install sway waybar fontawesome-fonts gammastep
+sudo dnf install sway waybar fontawesome-fonts gammastep alacritty dunst qbittorrent fish zoxide git fira-code-fonts papirus-icon-theme materia-gtk-theme
 ```
 
 
