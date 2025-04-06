@@ -15,6 +15,7 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+
 /*
 window#waybar.empty {
     background-color: transparent;
@@ -54,7 +55,7 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 2px;
+    padding: 0;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
@@ -118,7 +119,6 @@ button:hover {
 #clock {
     padding: 0px 16px 0px 16px ;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
     background-color: rgba(255, 255, 255, 0.10);
 }
 
@@ -128,7 +128,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #1f8349;
 }
 
 @keyframes blink {
@@ -329,4 +329,17 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+
+/* CPU, RAM hover  */
+
+#cpu,
+#memory {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+#cpu:hover,
+#memory:hover {
+    opacity: 1;
 }
