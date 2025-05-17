@@ -204,10 +204,6 @@ bindsym Mod4+Shift+s exec --no-startup-id grim -g "$(slurp -w 0)" - | wl-copy
 exec --no-startup-id dunst &
 bindsym $mod+c exec dunstctl close
 
-# Assign workspaces to monitors
-# workspace $ws1 output HDMI-1
-# workspace $ws10 output eDP-1
-
 # split in horizontal orientation
 bindcode $mod+47 split h
 
@@ -257,3 +253,12 @@ input type:keyboard {
 bindsym Mod4+1 exec --no-startup-id flatpak run io.github.zen_browser.zen
 bindsym Mod4+2 exec --no-startup-id code
 bindsym Mod4+3 exec --no-startup-id microsoft-edge
+
+# == DUAL MONITOR SETUP ==
+# Assign workspaces to monitors
+workspace $ws1 output HDMI-1
+workspace $ws10 output eDP-1
+
+# Double monitor setup monitor on top
+output eDP-1 pos 0 1080
+output HDMI-A-1 pos 0 0
