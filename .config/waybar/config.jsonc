@@ -19,8 +19,8 @@
   "modules-right": [
       "cpu",
       "memory",
-      "pulseaudio",
       "battery",
+      "pulseaudio",
       "clock",
       "tray",
       "custom/power"
