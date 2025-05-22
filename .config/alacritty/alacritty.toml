@@ -1,31 +1,31 @@
-
 [colors.bright]
-black = "0x6272a4"
-blue = "0x4a90e2"
-cyan = "0xa4ffff"
-green = "0x69ff94"
-magenta = "0xff92d0"
-red = "0xff6e6e"
-white = "0xffffff"
-yellow = "0xffffa5"
+black = "0x5C6370"
+blue = "0x7ABFFF"
+cyan = "0x67C7D3"
+green = "0xA9D48A"
+magenta = "0xD789E8"
+red = "0xF07F88"
+white = "0xFFFFFF"
+yellow = "0xF5CEA8"
+
 
 [colors.cursor]
-cursor = "0xf8f8f2"
-text = "0x1c1c1c"
+cursor = "0xEAEAEA"
+text = "0x121212"
 
 [colors.normal]
-black = "0x1e1e1e"
-blue = "0x4a90e2"
-cyan = "0x8be9fd"
-green = "0x50fa7b"
-magenta = "0xff79c6"
-red = "0xff5555"
-white = "0xf8f8f2"
-yellow = "0xf1fa8c"
+black = "0x1F1F1F"
+blue = "0x61AFEF"
+cyan = "0x56B6C2"
+green = "0x98C379"
+magenta = "0xC678DD"
+red = "0xE06C75"
+white = "0xABB2BF"
+yellow = "0xE5C07B"
 
 [colors.primary]
 background = "0x121212"
-foreground = "0xE5E5E5"
+foreground = "0xEAEAEA"
 
 [font]
 size = 14.0
@@ -50,9 +50,10 @@ program = "/usr/bin/fish"
 decorations = "full"
 dynamic_padding = false
 startup_mode = "Windowed"
+opacity = 0.95
 
 [window.padding]
-x = 20
-y = 20
+x = 16
+y = 16
 
 [terminal]
