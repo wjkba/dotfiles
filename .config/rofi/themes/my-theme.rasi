@@ -32,10 +32,10 @@
 
 window {
     width: 750px;
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: #666666;
     background-color: @background;
     border:           1;
-    padding:          10;
+    padding:          12px 12px 20px 12px;
 }
 mainbox {
     border:  0;
@@ -51,14 +51,15 @@ textbox {
 }
 listview {
     fixed-height: 0;
-    border:       2px dash 0px 0px ;
+    border:       0px ;
     border-color: @separatorcolor;
-    spacing:      2px ;
+    spacing:      0px ;
     scrollbar:    true;
     padding:      2px 0px 0px ;
 }
 element {
-    border:  0;
+    border:  0px 0px 1px;
+    border-color:hsl(0, 0.00%, 35.00%);
     padding: 4px 2px 4px 2px;
 }
 element-text {
