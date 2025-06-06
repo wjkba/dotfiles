@@ -52,3 +52,10 @@ context = ctrl+shift+period
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
+
+[volume_notification]
+    appname = "change-volume"
+    highlight = "#ffffff"
+    background = "#1e1e1e"
+    foreground = "#ffffff"
+    frame_color = "#666666"
