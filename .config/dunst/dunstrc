@@ -59,3 +59,10 @@ context = ctrl+shift+period
     background = "#1e1e1e"
     foreground = "#ffffff"
     frame_color = "#666666"
+
+[brightness_notification]
+    appname = "change-brightness"
+    highlight = "#ffffff"
+    background = "#1e1e1e"
+    foreground = "#ffffff"
+    frame_color = "#666666"
