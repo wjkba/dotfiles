@@ -128,9 +128,9 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    /* color: #ffffff;
-    background-color: #1f8349; */
-    color: #00DD00;
+    color: #ffffff;
+    /* background-color: #1f8349; */
+    /* color: #00DD00; */
 }
 
 @keyframes blink {
