@@ -96,7 +96,8 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    padding: 0 16px;
+    /* padding: 0 16px; */
+    margin-right: 16px;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
 }
@@ -150,7 +151,7 @@ button:hover {
 }
 
 #power-profiles-daemon {
-    padding-right: 15px;
+    padding-right: 0px;
 }
 
 #power-profiles-daemon.performance {
@@ -227,8 +228,7 @@ label:focus {
 }
 
 #custom-power {
-    padding-right: 2px;
-    padding-top: 5px;
+    padding-right: 8px;
 }
 
 #temperature {
