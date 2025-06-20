@@ -85,7 +85,7 @@
     "format-time": "{H}h{M}m",
     "format-charging": "{capacity}%  ",
     // "format-charging": "  {icon}  {capacity}% - {time}",
-    "format-full": "  {icon}",
+    "format-full": "100%  ",
     "interval": 30,
     "states": {
         "warning": 25,
