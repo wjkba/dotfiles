@@ -63,8 +63,8 @@
   },
   
   "tray": {
-      // "icon-size": 21,
-      "spacing": 10
+      "icon-size": 16,
+      "spacing": 16
   },
   "clock": {
       // "timezone": "America/New_York",
@@ -81,11 +81,11 @@
 "battery": {
     "format": "{capacity}% {icon} ",
     // "format": "{icon}  {capacity}% - {time}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [" ", " ", " ", " ", " "],
     "format-time": "{H}h{M}m",
-    "format-charging": "{capacity}% {icon}",
+    "format-charging": "{capacity}%  ",
     // "format-charging": "  {icon}  {capacity}% - {time}",
-    "format-full": "  {icon}",
+    "format-full": "100%  ",
     "interval": 30,
     "states": {
         "warning": 25,
@@ -116,12 +116,12 @@
       "format-source": "{volume}% ",
       "format-source-muted": "",
       "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
+          "headphone": " ",
+          "hands-free": " ",
+          "headset": " ",
+          "phone": " ",
+          "portable": " ",
+          "car": " ",
           "default": ["", "", ""]
       },
       "on-click": "pavucontrol"
@@ -139,7 +139,7 @@
       // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
   },
   "custom/power": {
-      "format" : "⏻ ",
+      "format" : "",
   "tooltip": false,
   "menu": "on-click",
   "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
