@@ -183,7 +183,7 @@ exec_always {
 
 # THEME
 # class                 border  bground text    indicator child_border
-client.focused          #ffffff #808080 #000000 #1e1e1e
+client.focused          #ffffff #666666 #ffffff #1e1e1e
 client.unfocused        #121212 #121212 #7e7e7e #121212
 client.focused_inactive #2c2c2c #2c2c2c #b0b0b0 #2c2c2c
 client.urgent           #bf616a #bf616a #ffffff #bf616a
@@ -214,8 +214,8 @@ bindcode $mod+48 split v
 exec --no-startup-id gammastep
 
 # brigthnessctl
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.local/bin/brightness.sh up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.local/bin/brightness.sh down
 
 # window border
 for_window [class="^.*"] border pixel 1
@@ -249,6 +249,15 @@ input type:keyboard {
 
 }
 
+# laptop touchpad
+input "type:touchpad" {
+    dwt enabled
+    dwtp enabled
+    tap enabled
+    tap_button_map lrm
+}
+
+
 # launch program
 bindsym Mod4+1 exec --no-startup-id flatpak run io.github.zen_browser.zen
 bindsym Mod4+2 exec --no-startup-id code
@@ -257,8 +266,39 @@ bindsym Mod4+3 exec --no-startup-id microsoft-edge
 # == DUAL MONITOR SETUP ==
 # Assign workspaces to monitors
 workspace $ws1 output HDMI-1
-workspace $ws10 output eDP-1
+#workspace $ws2 output HDMI-1
+#workspace $ws3 output HDMI-1
+#workspace $ws4 output HDMI-1
+#workspace $ws5 output HDMI-1
+#workspace $ws6 output HDMI-1
+#workspace $ws7 output HDMI-1
+#workspace $ws8 output eDP-1
+#workspace $ws9 output eDP-1
+#workspace $ws10 output eDP-1
 
 # Double monitor setup monitor on top
-output eDP-1 pos 0 1080
-output HDMI-A-1 pos 0 0
+# output eDP-1 pos 0 1080
+# output HDMI-A-1 pos 0 0
+
+# 4K monitor with scaling on top
+output HDMI-A-1 scale 1.6 pos 0 0
+output eDP-1 scale 1 pos 240 1350
+
+# Przerwy od komputera
+exec --no-startup-id sleep 2 && sane-break
+
+# == Move apps to workspaces ==
+# Using app_id
+#for_window [app_id="zen"] move to workspace 1
+#for_window [app_id="org.mozilla.firefox"] move to workspace 3
+
+# Using class
+#for_window [class="Code"] move to workspace 2
+#for_window [class="Obsidian"] move to workspace 4
+#for_window [class="Slack"] move to workspace 8
+#for_window [class="Chromium-browser"] move to workspace 9
+
+
+# Picture in Picture
+for_window [title="^Picture-in-Picture$"] \
+    floating enable, move position 0 0, sticky enable, resize set 280 160
